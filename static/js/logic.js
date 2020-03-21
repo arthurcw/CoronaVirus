@@ -29,7 +29,7 @@ L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
 
 
 // Grab the data with d3
-d3.csv("time_series-ncov-Confirmed.csv", function(data) {
+d3.csv("./time_series-ncov-Confirmed.csv", function (data) {
   console.log(data);
 });
 
