@@ -12,7 +12,8 @@ from sqlalchemy.orm import Session
 #################################################
 # Database Setup
 #################################################
-engine = create_engine("sqlite:///hawaii.sqlite")
+# engine = create_engine("sqlite:///hawaii.sqlite")
+engine = create_engine(f'postgres://{USER}:{PASS}@localhost/name of table')
 
 # reflect an existing database into a new model
 Base = automap_base()
