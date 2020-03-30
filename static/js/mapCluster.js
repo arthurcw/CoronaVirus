@@ -1,22 +1,31 @@
 // Source of data
-const url = "./merge_counties_and_ coordinates.csv";
-const selectDate = "2020-03-25";
+const url = "http://127.0.0.1:5000/dataCovid19";
+// const url = "./merge_counties_and_ coordinates.csv";
+const selectDate = Date.parse("2020-03-25");
 const caseFieldName = "cases";     // field name of confirmed cases
 const deathFieldName = "deaths";    // field name of deaths
 
 // Map initialization parameters
 const centerCoords = [20, 0];
 const mapBounds = [[90,-180], [-90, 180]];
-const mapZoomLevel = 3;
+const mapZoomLevel = 2;
 
 // Function to parse data
 function parseData(data) {
     data.forEach(d => {
-        // d.dateUnix = Date.parse(d.date);  // need to switch to date object for min/max
+        d.date = +d.date;
         d.cases = +d.cases;
-        d.deaths = +d.deaths;
+        d.death = +d.death;
         d.latitude = +d.latitude;
         d.longitude = +d.longitude;
+
+        if (d.province_state === null) {
+            d.desc = d.country_region;
+        } else if (d.admin2 === null) {
+            d.desc = d.province_state;
+        } else {
+            d.desc = d.admin2 + ", " + d.province_state;
+        };
     });
     return data;
 }
@@ -42,7 +51,12 @@ function iconClass(count) {
 function createMarkers(data, category) {
     // Remove zero data points
     data = data.filter((d) => {
-        return d[category] > 0 & !(d["latitude"] == 0 & d["longitude"] == 0);
+        return d[category] > 0
+            & !(d["latitude"] === 0 & d["longitude"] === 0)
+            & !(d["country_region"] === "US" & d["admin2"] === null)
+            & !((d["country_region"] === "Australia"
+                | d["country_region"] === "Canada"
+                | d["country_region"] === "China") & d["province_state"] === null);
     });
 
     // Create Marker Cluster
@@ -63,7 +77,7 @@ function createMarkers(data, category) {
     // Loop through data array
     data.forEach(feature => {
         // build pop up
-        var popup = "<b>" + feature.county +
+        var popup = "<b>" + feature.desc +
             '<br>' + feature[category] + "</b>";
 
         // marker icon, borrow style from marker cluster
@@ -120,6 +134,9 @@ function createLegend(dateString) {
  * @param {*} data : COVID-19 cases data
  */
 function createMap(data) {
+    // Data Check
+    // console.log(data);
+
     // Parse data
     data = parseData(data);
 
@@ -127,7 +144,7 @@ function createMap(data) {
     data = data.filter((d) => {
         return d["date"] == selectDate;
     });
-    console.log(data);
+    // console.log(data);
 
     // Create the tile layer that will be the background of our map
     var lightMap = L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}", {
@@ -168,10 +185,15 @@ function createMap(data) {
     myMap.addLayer(confirmedCases);
 
     // Create legend, add to map
-    var legend = createLegend(data[0]['date']);
+    var dt = new Date(0);
+    dt.setUTCMilliseconds(selectDate);
+    var legend = createLegend(
+        dt.toUTCString().split(' ').slice(0, 4).join(' ')
+        );
     legend.addTo(myMap);
 
 };
 
 // Run
-d3.csv(url, createMap);
+// d3.csv(url, createMap);
+d3.json(url, createMap);
