@@ -2,15 +2,25 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8">
+    <meta name="author" content="Arthur Chan, Lei Gu, Jun Yang, Cindy Wagner">
     <title>COVID-19 Dashboard</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/8ccb82001e.js" crossorigin="anonymous"></script>
 
     <!-- Leaflet JS & CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"
-    integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
-    crossorigin=""/>
+      integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+      crossorigin=""/>
     <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"
-    integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
-    crossorigin=""></script>
+      integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
+      crossorigin=""></script>
 
     <!-- d3 JS -->
     <script src="https://d3js.org/d3.v4.min.js"></script>
@@ -25,10 +35,189 @@
 
   </head>
   <body>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Sidebar -->
+        <nav class = "col-md-2 d-none d-md-block bg-light sidebar">
+          <ul class="nav flex-column">
+            <li class="nav-item mt-4">
+              <a class="nav-link active" href="#">
+                <i class="fas fa-globe"></i> Map<span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#statsRow">
+                <i class="fas fa-chart-bar"></i> Latest Statistics
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#confirmedCases">
+                <i class="fas fa-lungs-virus"></i> Confirmed Cases
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#deathCases">
+                <i class="fas fa-skull-crossbones"></i> Fatality Rates
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pop">
+                <i class="fas fa-users"></i> vs. Population
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gdp">
+                <i class="fas fa-dollar-sign"></i> vs. GDP
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#health">
+                <i class="fas fa-heartbeat"></i> vs. Healthcare Expenditure
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#forecast">
+                <i class="fas fa-chart-line"></i> Forecast
+              </a>
+            </li>
+          </ul>
 
-    <div id="map">
-      <!-- Cases Map -->
+          <div class="m-3">
+            <label>Region/Country</label>
+            <select id="regionList">
+              <option value="world">Worldwide</option>
+              <option value="Af">Africa</option>
+              <option value="AS">Asia</option>
+              <option value="Eu">Europe</option>
+              <option value="NA">North America</option>
+              <option value="SA">South America</option>
+            </select>
+          </div>
+        </nav>
+
+        <main role="main" class="col-md-10 ml-sm-auto">
+          <!-- Map -->
+          <div class="wrapper">
+            <div id="map"><!-- Cases Map --></div>
+            <div id="titleOverlay">
+              <h1 class="heading">Coronavirus</h1>
+              <p>Coronavirus disease 2019 is an infectious disease caused by severe acute respiratory syndrome coronavirus 2</p>
+            </div>
+          </div>
+
+          <!-- Latest Statistics -->
+          <div class="row m-1" id="statsRow">
+            <div class="col-4 px-2">
+              <div class="card text-center bg-dark text-white">
+                <h5 id="countries">172</h5>
+                <p>Countries</p>
+              </div>
+            </div>
+            <div class="col-4 px-2">
+              <div class="card text-center bg-dark text-white">
+                <h5 id="confirmedCases">722,435</h5>
+                <p>Confirmed Cases</p>
+              </div>
+            </div>
+            <div class="col-4 px-2">
+              <div class="card text-center bg-dark text-white">
+                <h5 id="deaths">33,997</h5>
+                <p>Deaths</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Confirmed Cases -->
+          <div class="mt-5 mx-3" id="confirmedCases">
+            <h3>Confirmed Cases</h3>
+            <p>The disease was first identified in 2019 in Wuhan, the capital of China's Hubei province,
+              and has since spread globally, resulting in the ongoing 2019–20 coronavirus pandemic</p>
+            <h5>Top 10 Countries over Time</h5>
+            <p>The following bar chart race animates the top 10 countries in terms of number of confirmed cases since January 20, 2020</p>
+            <!-- Bar Chart Race -->
+            <div class="image-placeholder m-3" id="barChartRace">
+              <h4>Bar Chart Race</h4>  <!-- this is a placeholder-->
+            </div>
+            <h5>Trend</h5>
+            <p>The following time series plots the number of confirmed cases</p>
+            <!-- Time Series Plot -->
+            <div class="image-placeholder m-3" id="timeSeriesPlot">
+              <h4>Time Series Plot. Plot top 10 or major countries. Plot in normal and log-scale (2 plots or 1 plot with clickable option to switch scale); add 40% growth rate line; [wish list] pull down menu by Country</h4>  <!-- this is a placeholder-->
+            </div>
+            <h6>China</h6>
+            <p>Cases starts ...</p>
+            <h6>Italy</h6>
+            <p>Cases starts ...</p>
+            <h6>Areas around Mainland China</h6>
+            <p>Number of cases were slowly increasing in Singapore, Japan, Taiwan, Hong Kong and Macau .......</p>
+            <h6>US</h6>
+            <p>In the US, the virus starts spreading in Washington, California and New York......</p>
+            <!-- Time Series Plot US-->
+            <div class="image-placeholder m-3" id="timeSeriesPlotUS">
+              <h4>Time Series Plot by states?</h4>  <!-- this is a placeholder-->
+            </div>
+          </div>
+
+          <!-- Mortality Rates -->
+          <div class="mt-5 mx-3" id="deathCases">
+            <h3>Fatality Rates</h3>
+            <p>Talk something about overall death rates. Higher than flu, SARS and MERS</p>
+            <!-- Death Rates Time Series Plot -->
+            <div class="image-placeholder m-3" id="deathRatesPlot">
+              <h4>Death rates over time</h4>  <!-- this is a placeholder-->
+            </div>
+          </div>
+
+          <!-- Cases or death rates vs Population -->
+          <div class="mt-5 mx-3" id="pop">
+            <h3>Vs. Population</h3>
+            <p>Compare with population</p>
+            <!-- Death Rates Time Series Plot -->
+            <div class="image-placeholder m-3" id="popScatter">
+              <h4>D3 plot with confirmed cases or deaths in y-axis, pop in x-axis</h4>  <!-- this is a placeholder-->
+            </div>
+            <p>Some discussions</p>
+          </div>
+
+          <!-- Cases or death rates vs GDP -->
+          <div class="mt-5 mx-3" id="gdp">
+            <h3>Vs. GDP</h3>
+            <p>Compare with GDP per capita</p>
+            <!-- Death Rates Time Series Plot -->
+            <div class="image-placeholder m-3" id="gdpScatter">
+              <h4>D3 plot with confirmed cases or deaths in y-axis, GDP per capita in x-axis</h4>  <!-- this is a placeholder-->
+            </div>
+            <p>Some discussions</p>
+          </div>
+
+          <!-- Cases or death rates vs Healthcare Expenditure -->
+          <div class="mt-5 mx-3" id="health">
+            <h3>Vs. Healthcare Expenditure</h3>
+            <p>Compare with Healthcare as % of GDP</p>
+            <!-- Death Rates Time Series Plot -->
+            <div class="image-placeholder m-3" id="healthcareScatter">
+              <h4>D3 plot with confirmed cases or deaths in y-axis, healthcare % as GDP in x-axis</h4>  <!-- this is a placeholder-->
+            </div>
+            <p>Some discussions</p>
+          </div>
+
+          <!-- Forecast -->
+          <div class="mt-5 mx-3" id="forecast">
+            <h3>Forecast</h3>
+            <p>Compare with Healthcare as % of GDP</p>
+            <!-- Death Rates Time Series Plot -->
+            <div class="image-placeholder m-3" id="forecastPlot">
+              <h4>curve fitting</h4>  <!-- this is a placeholder-->
+            </div>
+            <p>Some discussions</p>
+          </div>
+
+
+        </main>
+      </div>
+
     </div>
+
     <script type="text/javascript" src="static/js/config.js"></script>
     <script type="text/javascript" src="static/js/mapCluster.js"></script>
 

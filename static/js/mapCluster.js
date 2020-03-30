@@ -8,7 +8,7 @@ const deathFieldName = "deaths";    // field name of deaths
 // Map initialization parameters
 const centerCoords = [20, 0];
 const mapBounds = [[90,-180], [-90, 180]];
-const mapZoomLevel = 3;
+const mapZoomLevel = 2;
 
 // Function to parse data
 function parseData(data) {
@@ -187,7 +187,6 @@ function createMap(data) {
     // Create legend, add to map
     var dt = new Date(0);
     dt.setUTCMilliseconds(selectDate);
-    console.log(typeof(dt));
     var legend = createLegend(
         dt.toUTCString().split(' ').slice(0, 4).join(' ')
         );
