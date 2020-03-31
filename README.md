@@ -13,10 +13,10 @@ Because this is a new virus, there are still things we do not know, such as how 
 
 Therefore, we are collecting datasets and visualizing them to see if we can predict and find patterns of the virus. 
 
-⋅⋅*	Any pattern vs GDP/capita, or public healthcare funding spends or index, temperature
-⋅⋅*	Stage and pattern of the pandemic (research the terminology and concept of stages)
-⋅⋅*	Population distribution and healthcare resources by Geo Mapping
-⋅⋅*	Future projection
+1. Any pattern vs GDP/capita, or public healthcare funding spends or index, temperature
+2. Stage and pattern of the pandemic (research the terminology and concept of stages)
+3. Population distribution and healthcare resources by Geo Mapping
+4. Future projection
 
 ## Data Sources
 
