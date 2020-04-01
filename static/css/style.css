@@ -60,3 +60,28 @@ main {
   text-align: center;
   width: 100%;
 }
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 2px;
+}
+
+/* path {
+  stroke: blue;
+  stroke-width: 2px;
+  fill: none;
+} */
+
+.tooltip {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  padding: 10px;
+  font: 6px sans-serif;
+  text-align: center;
+  color: black;
+  background: orange;
+  border: 5;
+  border-radius: 8px;
+}
