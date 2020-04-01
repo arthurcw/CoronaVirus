@@ -35,6 +35,9 @@ CREATE TABLE covid19 (
 SELECT *
 FROM covid19;
 
+COPY covid19
+FROM 'C:/Users/chanwc/Documents/NU_DS_HW/ClusterTestGH/Datasets/Covid19_20200329.csv'
+DELIMITER ',' CSV HEADER;
 
 
 
