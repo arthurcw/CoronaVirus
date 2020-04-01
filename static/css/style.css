@@ -56,25 +56,77 @@ main {
   margin: 5px;
 }
 
+.sidebar {
+  min-height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  position: fixed;
+}
+
+.nav-item a:hover {
+  background-color: #4B515D;
+  color: white;
+  font-weight: bold;
+}
+
+.nav-item i {
+  width: 20px;
+}
+
+.nav-item a {
+  color:#4B515D;
+}
+
+main {
+  padding: 0px !important;
+}
+
+/* Wrapper for map and title */
+.wrapper {
+  position: relative;
+}
+
+#map {
+  min-height: 92vh;
+}
+
+#titleOverlay {
+  position: absolute;
+  top: 20px;
+  left: 10%;
+  z-index: 10000;
+}
+
+#mapRegionList {
+  position: absolute;
+  bottom: 2%;
+  left: 2%;
+  z-index: 10000;
+}
+
+/* Statistics row below map*/
+#statsRow {
+  min-height: 8vh;
+}
+
+.heading {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* image place holder */
+.image-placeholder {
+  background-color: #eee;
+  display: flex;
+  height: 500px;
+  margin: 5px;
+}
+
 .image-placeholder > h4 {
   align-self: center;
   text-align: center;
   width: 100%;
 }
 
-<<<<<<< HEAD
-path {
-  stroke: blue;
-  stroke-width: 2px;
-  fill: none;
-}
-
-.line {
-  fill: none;
-  stroke: maroon;
-  stroke-width: 2px;
-  stroke-linejoin: round;
-=======
 .line {
   fill: none;
   stroke: steelblue;
@@ -98,5 +150,4 @@ path {
   background: orange;
   border: 5;
   border-radius: 8px;
->>>>>>> 85c31c5e3e0f10bf40e848904034d81fed0c4a98
 }
