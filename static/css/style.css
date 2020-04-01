@@ -1,3 +1,4 @@
+
 .sidebar {
   min-height: 100vh;
   margin: 0px;
@@ -59,4 +60,17 @@ main {
   align-self: center;
   text-align: center;
   width: 100%;
+}
+
+path {
+  stroke: blue;
+  stroke-width: 2px;
+  fill: none;
+}
+
+.line {
+  fill: none;
+  stroke: maroon;
+  stroke-width: 2px;
+  stroke-linejoin: round;
 }
