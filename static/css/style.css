@@ -39,6 +39,14 @@ main {
   z-index: 10000;
 }
 
+#mapRegionList {
+  position: absolute;
+  bottom: 2%;
+  left: 2%;
+  z-index: 10000;
+}
+
+/* Statistics row below map*/
 #statsRow {
   min-height: 8vh;
 }
@@ -59,4 +67,10 @@ main {
   align-self: center;
   text-align: center;
   width: 100%;
+}
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 2px;
 }
