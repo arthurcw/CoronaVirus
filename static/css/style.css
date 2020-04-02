@@ -137,11 +137,14 @@ main {
   stroke-width: 2px;
 }
 
-/* path {
-  stroke: blue;
-  stroke-width: 2px;
-  fill: none;
-} */
+.tick line {
+  stroke: rgb(194, 194, 184);
+}
+
+.axis-label {
+  font-size: 3em;
+  fill: #8E8883;
+}
 
 .tooltip {
   position: absolute;
@@ -155,3 +158,4 @@ main {
   border: 5;
   border-radius: 8px;
 }
+
