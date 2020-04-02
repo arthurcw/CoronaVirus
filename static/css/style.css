@@ -56,6 +56,10 @@ main {
   margin: 5px;
 }
 
+.hc-figures {
+  min-height: 500px;
+}
+
 .sidebar {
   min-height: 100vh;
   margin: 0px;
