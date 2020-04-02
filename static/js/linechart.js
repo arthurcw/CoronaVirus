@@ -110,15 +110,19 @@ d3.csv(url3, function (data) {
     });
 
 
-    data1 = data.filter((d) => {
+    china = data.filter((d) => {
         return d["country_region"] === "China" & d["admin2"] == "" & d["province_state"] == ""
     });
     console.log(data1);
 
-    data2 = data.filter((d) => {
+    us = data.filter((d) => {
         return d["country_region"] === "US" & d["admin2"] == "" & d["province_state"] == ""
     });
-    console.log(data2);
+
+    itali=  data.filter((d) => {
+        return d["country_region"] === "Itali" & d["admin2"] == "" & d["province_state"] == ""
+    });
+    m=data1.concat(data2)
 
     // var maxDate = d3.max(data, function (d) { return d.date; });
     // var minDate = d3.min(data, function (d) { return d.date; });
@@ -209,7 +213,7 @@ d3.csv(url3, function (data) {
    
 
     var circlesGroup = chartGroup.selectAll("circle")
-        .data(data2)
+        .data(m) 
         .enter()
         .append("circle")
         .attr("cx", d => xTimeScale(d.date))
@@ -236,7 +240,7 @@ d3.csv(url3, function (data) {
 
 //       // functions here found above csv import
 //       // updates x scale for new data
-//       xLinearScale = xScale(hairData, chosenXAxis);
+//       xLinearScale = xScale(data, chosenXAxis);
 
 //       // updates x axis with transition
 //       xAxis = renderAxes(xLinearScale, xAxis);
@@ -248,7 +252,7 @@ d3.csv(url3, function (data) {
 //       circlesGroup = updateToolTip(chosenXAxis, circlesGroup);
 
 //       // changes classes to change bold text
-//       if (chosenXAxis === "num_albums") {
+//       if (chosenXAxis === "confirmed_cases") {
 //         albumsLabel
 //           .classed("active", true)
 //           .classed("inactive", false);
@@ -296,4 +300,6 @@ d3.csv(url3, function (data) {
         .on("mouseout", function (d) {
             toolTip.hide(d);
         });
+
+
 });
