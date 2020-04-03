@@ -22,6 +22,9 @@
       integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
       crossorigin=""></script>
 
+    <!-- Highcharts JS -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+
     <!-- d3 JS -->
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <script src="https://d3js.org/d3-format.v1.min.js"></script>
@@ -66,6 +69,11 @@
             <li class="nav-item">
               <a class="nav-link" href="#pop">
                 <i class="fas fa-users"></i> vs. Population
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#age">
+                <i class="fas fa-baby"></i> vs. Age
               </a>
             </li>
             <li class="nav-item">
@@ -162,7 +170,6 @@
             <div class="image-placeholder m-3" id="timeSeriesPlotUS">
               <h4>Time Series Plot by states?</h4>  <!-- this is a placeholder-->
             </div>
-            
           </div>
 
           <!-- Mortality Rates -->
@@ -179,10 +186,19 @@
           <div class="mt-5 mx-3" id="pop">
             <h3>Vs. Population</h3>
             <p>Compare with population</p>
-            <!-- Death Rates Time Series Plot -->
-            <div class="image-placeholder m-3" id="popScatter">
-              <h4>D3 plot with confirmed cases or deaths in y-axis, pop in x-axis</h4>  <!-- this is a placeholder-->
-            </div>
+            <figure class="highcharts-figure">
+              <div class="hc-figures" id="popContainer"><!-- Cases vs Population Chart --></div>
+            </figure>
+            <p>Some discussions</p>
+          </div>
+
+          <!-- Cases or death rates vs Median Age -->
+          <div class="mt-5 mx-3" id="age">
+            <h3>Vs. Median Age</h3>
+            <p>Compare with population</p>
+            <figure class="highcharts-figure">
+              <div class="hc-figures" id="ageContainer"><!-- Cases vs Age Chart --></div>
+            </figure>
             <p>Some discussions</p>
           </div>
 
@@ -190,10 +206,9 @@
           <div class="mt-5 mx-3" id="gdp">
             <h3>Vs. GDP</h3>
             <p>Compare with GDP per capita</p>
-            <!-- Death Rates Time Series Plot -->
-            <div class="image-placeholder m-3" id="gdpScatter">
-              <h4>D3 plot with confirmed cases or deaths in y-axis, GDP per capita in x-axis</h4>  <!-- this is a placeholder-->
-            </div>
+            <figure class="highcharts-figure">
+              <div class="hc-figures" id="gdpContainer"><!-- Cases vs GDP Chart --></div>
+            </figure>
             <p>Some discussions</p>
           </div>
 
@@ -201,10 +216,9 @@
           <div class="mt-5 mx-3" id="health">
             <h3>Vs. Healthcare Expenditure</h3>
             <p>Compare with Healthcare as % of GDP</p>
-            <!-- Death Rates Time Series Plot -->
-            <div class="image-placeholder m-3" id="healthcareScatter">
-              <h4>D3 plot with confirmed cases or deaths in y-axis, healthcare % as GDP in x-axis</h4>  <!-- this is a placeholder-->
-            </div>
+            <figure class="highcharts-figure">
+              <div class="hc-figures" id="hcContainer"><!-- Cases vs Healthcare Exp Chart --></div>
+            </figure>
             <p>Some discussions</p>
           </div>
 
@@ -228,6 +242,7 @@
     <script type="text/javascript" src="static/js/config.js"></script>
     <script type="text/javascript" src="static/js/map.js"></script>
     <script type="text/javascript" src="static/js/linechart.js"></script>
+    <script type="text/javascript" src="static/js/scatterPlot.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
     <script src="https://d3js.org/d3.v5.min.js"></script>
 

@@ -1,14 +1,22 @@
 .ipynb_checkpoints/
 
+
 __pycache__/
 
+
 .vscode
+
 sql_config.py
+
 
 jy_test.js
 
+
 barchart_race.js
+
 
 barchart-race-matplotlib-Copy1.ipynb
 
-barchart-race-matplotlib..ipynb
+
+barchart-race-matplotlib.ipynb
+testAPI.ipynb
