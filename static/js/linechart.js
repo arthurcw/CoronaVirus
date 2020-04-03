@@ -1,5 +1,5 @@
-const url3 = "./Datasets/Covid19_20200327.csv";
-const deathnumber = "./Datasets/Covid19_20200327.csv";
+const url3 = "./Datasets/Covid19_20200329.csv";
+// const deathnumber = "./Datasets/Covid19_20200327.csv";
 // const selectDate = Date.parse("2020-03-25");
 // const caseFieldName = "cases";     // field name of confirmed cases
 // const deathFieldName = "deaths";    // field name of deaths
@@ -50,6 +50,7 @@ d3.csv(url3, function (data) {
     country_list = ["China", "US", "Italy", "Spain", "Germany", "Iran", "France"];
     color_list = ['#3623E6', '#E62923', '#4893CD', '#CD48B7', '#5F270F', '#D8B373', '#20945A'];
     caseNumber = [];
+    data_country_all = [];
 
     for (i = 0; i < country_list.length; i++) {
         data_country = data.filter((d) => {
@@ -69,7 +70,7 @@ d3.csv(url3, function (data) {
         .nice();
 
         var yLinearScale_each = d3.scaleLinear()
-        .domain([0, 90000])
+        .domain([0, 150000])
         .range([height, 0])
         .nice();
 
@@ -125,44 +126,44 @@ d3.csv(url3, function (data) {
             .attr("fill", "none")
             .attr("stroke", color_list[i]);
         
-        var circlesGroup = chartGroup.selectAll("circle")
-            .data(data_country)
+        data_country_all = data_country_all.concat(data_country);
+    
+
+    }
+    var circlesGroup = chartGroup.selectAll("circle")
+            .data(data_country_all)
             .enter()
             .append("circle")
             .attr("cx", d => xTimeScale(d.date))
             .attr("cy", d => yLinearScale_each(d.cases))
-            .attr("r", "2")
+            .attr("r", "1.2")
             .attr("fill", "gold")
             .attr("stroke-width", "1")
             .attr("stroke", "black");
 
-        // Date formatter to display dates nicely
-        var dateFormatter = d3.timeFormat("%d-%b");
+    // Date formatter to display dates nicely
+    var dateFormatter = d3.timeFormat("%d-%b");
 
-        // Step 1: Initialize Tooltip
-        var toolTip = d3.tip()
-            .attr("class", "tooltip")
-            .offset([70, -60])
-            .html(function (d) {
-                return (`<strong>${dateFormatter(d.date)}<strong><hr>${d.cases}
-                    case(s) confirmed`);
-            });
+    // Step 1: Initialize Tooltip
+    var toolTip = d3.tip()
+        .attr("class", "tooltip")
+        .offset([70, -60])
+        .html(function (d) {
+            return (`<strong>${dateFormatter(d.date)}<strong><br>${d.country_region}<hr>${d.cases}
+                case(s) confirmed`);
+        });
 
-        // Step 2: Create the tooltip in chartGroup.
-        chartGroup.call(toolTip);
+    // Step 2: Create the tooltip in chartGroup.
+    chartGroup.call(toolTip);
 
-        // Step 3: Create "mouseover" event listener to display tooltip
-        circlesGroup.on("mouseover", function (d) {
-            toolTip.show(d, this);
-        })
-            // Step 4: Create "mouseout" event listener to hide tooltip
-            .on("mouseout", function (d) {
-                toolTip.hide(d);
-            });
-    
-
-    }
-    
+    // Step 3: Create "mouseover" event listener to display tooltip
+    circlesGroup.on("mouseover", function (d) {
+        toolTip.show(d, this);
+    })
+        // Step 4: Create "mouseout" event listener to hide tooltip
+        .on("mouseout", function (d) {
+            toolTip.hide(d);
+        });
 
     // var maxNumber1 = d3.max(data1, function (d) { return d.cases; });
     // var maxNumber2 = d3.max(data2, function (d) { return d.cases; });
