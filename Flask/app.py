@@ -77,9 +77,11 @@ def queryZeroCase():
     engine = create_engine(f"postgresql+psycopg2://{user}:{pw}@{db_loc}/{db_name}")
     connection = engine.connect()
     query = f'''
-        SELECT code, iso_country, latitude, longitude
-        FROM countries
-        WHERE covid19_country IS NULL
+        SELECT c.code, c.iso_country, p.population_2020 as population, c.latitude, c.longitude
+        FROM countries as c
+        LEFT JOIN global_population as p
+            on p.country = c.pop_country
+        WHERE c.covid19_country IS NULL
         '''
     df = pd.read_sql(query, connection)
     return df.to_json(orient='records')
