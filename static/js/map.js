@@ -294,4 +294,6 @@ function createMap(data) {
 };
 
 // Run
-d3.json(urlMap, createMap);
+d3.json(urlMap).then(data => {
+    createMap(data);
+});

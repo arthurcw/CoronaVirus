@@ -153,4 +153,6 @@ function generateScatterPlots(data) {
 };
 
 // Read data and run
-d3.json(urlScatterPlots, generateScatterPlots);
+d3.json(urlScatterPlots).then(data => {
+    generateScatterPlots(data);
+})
