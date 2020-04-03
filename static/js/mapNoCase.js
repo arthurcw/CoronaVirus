@@ -58,4 +58,6 @@ function createMapNoCase(data) {
 };
 
 // Run
-d3.json(urlFree, createMapNoCase);
+d3.json(urlFree).then(data=> {
+    createMapNoCase(data);
+});
