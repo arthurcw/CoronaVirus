@@ -1,4 +1,4 @@
-
+/* Side bar items */
 .sidebar {
   min-height: 100vh;
   margin: 0px;
@@ -19,72 +19,14 @@
 .nav-item a {
   color:#4B515D;
 }
+/* End of Side bar items */
 
+/* Main body */
 main {
   padding: 0px !important;
 }
 
-/* Wrapper for map and title */
-.wrapper {
-  position: relative;
-}
-
-#map {
-  min-height: 92vh;
-}
-
-#titleOverlay {
-  position: absolute;
-  top: 20px;
-  left: 10%;
-  z-index: 10000;
-}
-
-#statsRow {
-  min-height: 8vh;
-}
-
-.heading {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-/* image place holder */
-.image-placeholder {
-  background-color: #eee;
-  display: flex;
-  height: 500px;
-  margin: 5px;
-}
-
-.hc-figures {
-  min-height: 500px;
-}
-
-.sidebar {
-  min-height: 100vh;
-  margin: 0px;
-  padding: 0px;
-  position: fixed;
-}
-
-.nav-item a:hover {
-  background-color: #4B515D;
-  color: white;
-  font-weight: bold;
-}
-
-.nav-item i {
-  width: 20px;
-}
-
-.nav-item a {
-  color:#4B515D;
-}
-
-main {
-  padding: 0px !important;
-}
-
+/* Items in Cases Map */
 /* Wrapper for map and title */
 .wrapper {
   position: relative;
@@ -108,13 +50,19 @@ main {
   z-index: 10000;
 }
 
-/* Statistics row below map*/
 #statsRow {
   min-height: 8vh;
 }
+/* End of Items in Cases Map */
 
+/* Text-related */
 .heading {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Highcharts figure height */
+.hc-figures {
+  min-height: 500px;
 }
 
 /* image place holder */
@@ -131,27 +79,23 @@ main {
   width: 100%;
 }
 
-/* .line {
-  fill: none;
-  stroke: steelblue;
-  stroke-width: 2px;
-} */
-
+/* D3 chart */
 .tick line {
   stroke: rgb(194, 194, 184);
 }
 
 .axis-label {
-  font-size: 3em;
+  font-size: 2em;
   fill: #8E8883;
 }
 
 .tooltip {
   position: absolute;
-  width: 80px;
+  width: 100px;
   height: 100px;
   padding: 10px;
-  font: 6px sans-serif;
+  font: sans-serif;
+  font-size: 6pt;
   text-align: center;
   color: black;
   background: orange;
@@ -159,6 +103,7 @@ main {
   border-radius: 8px;
 }
 
+/* Icon color for the map of country with zero cases */
 .fa-sun {
   color: orangered;
 }

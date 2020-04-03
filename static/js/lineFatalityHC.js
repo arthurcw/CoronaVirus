@@ -36,8 +36,6 @@ function generateFatalityTS(data) {
     };
     series = buildSeries();
 
-    console.log(series);
-
     // Highcharts template
     Highcharts.chart(figFatalityID, {
         chart: { zoomType: 'x' },

@@ -28,7 +28,7 @@ function createMapNoCase(data) {
         className: 'custom-div-icon',
         html: "<div class='marker-pin'></div><i class='fas fa-sun fa-2x'></i>",
         iconSize: [30, 42],
-        iconAnchor: [0, 0]
+        iconAnchor: [15, 15]
     })
 
     //marker array
@@ -52,9 +52,6 @@ function createMapNoCase(data) {
     });
     myMap.addLayer(lightMap);
     myMap.addLayer(dataLayer);
-
-    // Countries without cases
-    // d3.select("#countries").text(data.length);
 };
 
 // Run
