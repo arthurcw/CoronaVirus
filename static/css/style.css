@@ -107,11 +107,11 @@ svg text {
 
 .tooltip {
   position: absolute;
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   padding: 10px;
   font: sans-serif;
-  font-size: 6pt;
+  font-size: 9pt;
   text-align: center;
   color: black;
   background: orange;

@@ -141,7 +141,7 @@ d3.json(urlLineChart).then(function (data, err) {
         .attr("class", "tooltip")
         .offset([70, -60])
         .html(function (d) {
-            return (`<strong>${dateFormatter(d.date)}<strong><br>${d.country_region}<hr>${d.cases}
+            return (`<strong>${dateFormatter(d.date)}<strong><br>${d.country_region}<hr>${casesNumFormat(d.cases)}
                 case(s) confirmed`);
         });
     chartGroup.call(toolTip);
