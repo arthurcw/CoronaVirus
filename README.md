@@ -32,7 +32,7 @@ https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_c
 - D3
 - Highcharts
 - Plotly
-
+- Awesome Fonts
 
 ## Data manipulation and cleanup
 1.	Check for duplicates and missing data
