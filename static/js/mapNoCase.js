@@ -13,7 +13,6 @@ function createMapNoCase(data) {
         d.latitude = +d.latitude;
         d.longitude = +d.longitude;
     })
-    console.log(data);
 
     // Create the tile layer that will be the background of our map
     var lightMap = L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}", {
@@ -59,4 +58,6 @@ function createMapNoCase(data) {
 };
 
 // Run
-d3.json(urlFree, createMapNoCase);
+d3.json(urlFree).then(data=> {
+    createMapNoCase(data);
+});

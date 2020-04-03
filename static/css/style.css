@@ -131,11 +131,11 @@ main {
   width: 100%;
 }
 
-.line {
+/* .line {
   fill: none;
   stroke: steelblue;
   stroke-width: 2px;
-}
+} */
 
 .tick line {
   stroke: rgb(194, 194, 184);
