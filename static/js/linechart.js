@@ -5,6 +5,7 @@ const urlLineChart = "http://127.0.0.1:5000/dataByCountry";
 // SVG setting
 var svgWidth = d3.select("main").node().getBoundingClientRect().width;
 var svgHeight = 500;
+console.log(svgWidth, svgHeight);
 var margin = {
     top: 20,
     right: 40,
@@ -17,8 +18,10 @@ var height = svgHeight - margin.top - margin.bottom;
 // Append SVG element
 var svg = d3.select("#timeSeriesPlot")
     .append("svg")
-    .attr("width", svgWidth)
-    .attr("height", svgHeight);
+    .attr("width", '100%')
+    .attr("height", '100%')
+    .attr('viewBox','0 0 '+svgWidth+' '+svgHeight)
+    .attr('preserveAspectRatio','xMinYMin');
 
 var chartGroup = svg.append("g")
     .attr("transform", `translate(${margin.left}, ${margin.top})`);
@@ -29,11 +32,7 @@ d3.json(urlLineChart).then(function (data, err) {
 
     // Step 1: Parse Data/Cast as numbers
     // ==============================
-    // Create a function to parse date and time
-    // var parseTime = d3.timeParse("%m/%d/%Y");
-
     data.forEach((d) => {
-        // d.date = parseTime(d.date);
         d.date = +d.date;
         d.cases = +d.cases;
         d.death = +d.death;
@@ -84,7 +83,7 @@ d3.json(urlLineChart).then(function (data, err) {
 
         yAxisG.append('text')
             .attr('class', 'axis-label')
-            .attr('y', -60)
+            .attr('y', -70)
             .attr('x', -height / 2)
             .attr('fill', 'black')
             .attr('transform', `rotate(-90)`)
@@ -122,7 +121,6 @@ d3.json(urlLineChart).then(function (data, err) {
 
     // Step 4: Add markers
     // ==============================
-
     var circlesGroup = chartGroup.selectAll("circle")
             .data(data_country_all)
             .enter()
@@ -138,6 +136,7 @@ d3.json(urlLineChart).then(function (data, err) {
     var dateFormatter = d3.timeFormat("%d-%b");
 
     // Step 5: Tooltip
+    // ==============================
     var toolTip = d3.tip()
         .attr("class", "tooltip")
         .offset([70, -60])
