@@ -26,6 +26,13 @@ https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_c
 
 2.	
 
+## Libraries 
+⋅⋅* Bootstrap
+⋅⋅* Leaflet
+⋅⋅* D3
+⋅⋅* Highcharts
+⋅⋅* Plotly 
+
 
 ## Data manipulation and cleanup
 1.	Check for duplicates and missing data
