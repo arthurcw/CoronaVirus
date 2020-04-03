@@ -10,10 +10,10 @@
 //     var deathList = [];
 //     data.forEach(d=> {
 //         if (d[category] != null & d[category] > 0 & d.cases > 0) {
-//             confirmedList.push([d[category], d.cases, d.country_region])
+//             confirmedList.push([d[category], d.cases])
 //         }
 //         if (d[category] != null & d[category] > 0 & d.death > 0) {
-//             deathList.push([d[category], d.death, d.country_region])
+//             deathList.push([d[category], d.death])
 //         }
 //     })
 //     var confirmedCases = {};

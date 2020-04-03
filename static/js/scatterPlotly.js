@@ -20,13 +20,13 @@ function unpackData(data, category, normalizedCategory) {
     data.forEach(d=> {
         if (d[category] != null & d[category] > 0 & d.cases > 0) {
             casesCountry.push(d.country_region);
-            casesCount.push((normalizedCategory === "none" ? +d.cases : (+d.cases/+d[category]*100)))
+            casesCount.push((normalizedCategory === "none" ? +d.cases : (+d.cases/+d[normalizedCategory]*100)))
             // casesCount.push(+d.cases);
             casesCategory.push(+d[category]);
         }
         if (d[category] != null & d[category] > 0 & d.death > 0) {
             deathCountry.push(d.country_region);
-            deathCount.push((normalizedCategory === "none" ? +d.death : (+d.death/+d[category]*100)))
+            deathCount.push((normalizedCategory === "none" ? +d.death : (+d.death/+d[normalizedCategory]*100)))
             // deathCount.push(+d.death);
             deathCategory.push(+d[category]);
         }
@@ -155,7 +155,7 @@ function generateScatterPlots(data) {
     // 1b. Pct Population
     generatePlot(data, "population", "population", "log", "linear", "pctpopContainer", "Population", "Cases per Population (%)");
     // 2. Median Age
-    generatePlot(data, "med_age", "none", "linear", "log", "ageContainer", "Median Age", "Number of Cases");
+    generatePlot(data, "med_age", "population", "linear", "log", "ageContainer", "Median Age", "Cases per Population (%)");
     // 3. GDP
     generatePlot(data, "gdp", "none", "log", "log", "gdpContainer", "per capita GDP ($)", "Number of Cases");
     // 4. Healthcare Expense

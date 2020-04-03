@@ -82,7 +82,6 @@ def queryCountryDaily():
         WHERE admin2 IS NULL AND province_state IS NULL
     '''
     df = pd.read_sql(query, connection)
-    df['death_p_case'] = df.death / df.cases
     return df.to_json(orient='records')
 
 # Query Countries with no Reported Cases

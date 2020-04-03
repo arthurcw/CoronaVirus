@@ -183,11 +183,11 @@
           <!-- Mortality Rates -->
           <div class="mt-5 mx-3" id="deathCases">
             <h3>Fatality Rates</h3>
-            <p>Talk something about overall death rates. Higher than flu, SARS and MERS</p>
+            <p>Below shows the fatality rate of countries with the largest number of deaths</p>
             <!-- Death Rates Time Series Plot -->
-            <div class="image-placeholder m-3" id="deathRatesPlot">
-              <h4>Death rates over time</h4>  <!-- this is a placeholder-->
-            </div>
+            <figure class="highcharts-figure">
+              <div id="deathRatePlot"></div>
+            </figure>
           </div>
 
           <!-- Cases or death rates vs Population -->
@@ -206,7 +206,7 @@
           <!-- Cases or death rates vs Median Age -->
           <div class="mt-5 mx-3" id="age">
             <h3>Vs. Median Age</h3>
-            <p>Compare with population</p>
+            <p>Percent of Population Contracted or Died vs. Median Age of Country.</p>
             <figure>
               <div id="ageContainer"><!-- Cases vs Age Chart --></div>
             </figure>
