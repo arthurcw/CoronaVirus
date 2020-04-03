@@ -33,7 +33,7 @@
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/leaflet.markercluster@1.0.3/dist/MarkerCluster.Default.css">
 
     <!-- Highcharts JS -->
-    <!-- <script src="https://code.highcharts.com/highcharts.js"></script> -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
 
     <!-- Plotly JS-->
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
@@ -148,8 +148,8 @@
           <!-- Confirmed Cases -->
           <div class="mt-5 mx-3" id="confirmedCases">
             <h3>Confirmed Cases</h3>
-            <p>The disease was first identified in 2019 in Wuhan, the capital of China's Hubei province,
-              and has since spread globally, resulting in the ongoing 2019–20 coronavirus pandemic</p>
+            <p>The disease was first identified in November 2019 in Wuhan, the capital of China's Hubei province,
+              and has since spread globally, resulting in the ongoing coronavirus pandemic</p>
             <h5>Top 10 Countries over Time</h5>
             <p>The following bar chart race animates the top 10 countries in terms of number of confirmed cases since January 20, 2020</p>
             <!-- Bar Chart Race -->
@@ -194,18 +194,21 @@
           <div class="mt-5 mx-3" id="pop">
             <h3>Vs. Population</h3>
             <p>Compare with population</p>
-            <figure class="highcharts-figure">
-              <div class="hc-figures" id="popContainer"><!-- Cases vs Population Chart --></div>
+            <figure>
+              <div id="popContainer"><!-- Cases vs Population Chart --></div>
             </figure>
-            <p>Some discussions</p>
+            <p>Percent of Population Contracting the Virus</p>
+            <figure>
+              <div id="pctpopContainer"><!-- Pct Cases vs Population Chart --></div>
+            </figure>
           </div>
 
           <!-- Cases or death rates vs Median Age -->
           <div class="mt-5 mx-3" id="age">
             <h3>Vs. Median Age</h3>
             <p>Compare with population</p>
-            <figure class="highcharts-figure">
-              <div class="hc-figures" id="ageContainer"><!-- Cases vs Age Chart --></div>
+            <figure>
+              <div id="ageContainer"><!-- Cases vs Age Chart --></div>
             </figure>
             <p>Some discussions</p>
           </div>
@@ -214,8 +217,8 @@
           <div class="mt-5 mx-3" id="gdp">
             <h3>Vs. GDP</h3>
             <p>Compare with GDP per capita</p>
-            <figure class="highcharts-figure">
-              <div class="hc-figures" id="gdpContainer"><!-- Cases vs GDP Chart --></div>
+            <figure>
+              <div id="gdpContainer"><!-- Cases vs GDP Chart --></div>
             </figure>
             <p>Some discussions</p>
           </div>
@@ -224,8 +227,8 @@
           <div class="mt-5 mx-3" id="health">
             <h3>Vs. Healthcare Expenditure</h3>
             <p>Compare with Healthcare as % of GDP</p>
-            <figure class="highcharts-figure">
-              <div class="hc-figures" id="hcContainer"><!-- Cases vs Healthcare Exp Chart --></div>
+            <figure>
+              <div id="hcContainer"><!-- Cases vs Healthcare Exp Chart --></div>
             </figure>
             <p>Some discussions</p>
           </div>
@@ -253,6 +256,7 @@
     <script type="text/javascript" src="static/js/config.js"></script>
     <script type="text/javascript" src="static/js/map.js"></script>
     <script type="text/javascript" src="static/js/linechart.js"></script>
+    <script type="text/javascript" src="static/js/lineFatalityHC.js"></script>
     <script type="text/javascript" src="static/js/scatterPlotly.js"></script>
     <script type="text/javascript" src="static/js/mapNoCase.js"></script>
 

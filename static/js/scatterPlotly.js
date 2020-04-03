@@ -4,9 +4,12 @@ const urlScatterPlots = "http://127.0.0.1:5000/dataLatestInfo";
 /**
  * Function to unpack data into arrays
  * @param {*} data
- * @param {string} category - column name of dataset to compare to compare (population, med_age, gdp or health_exp)
+ * @param {string} category - column name of dataset to compare to compare (population, med_age, 
+ *                              gdp or health_exp)
+ * @param {string} normalizedCategory - column name of dataset to normalize cases/deaths (population, 
+ *                                      med_age, gdp or health_exp), or "none"
  */
-function unpackData(data, category) {
+function unpackData(data, category, normalizedCategory) {
     // unpack data into arrays
     var casesCountry = [];
     var casesCount = [];
@@ -17,12 +20,14 @@ function unpackData(data, category) {
     data.forEach(d=> {
         if (d[category] != null & d[category] > 0 & d.cases > 0) {
             casesCountry.push(d.country_region);
-            casesCount.push(+d.cases);
+            casesCount.push((normalizedCategory === "none" ? +d.cases : (+d.cases/+d[category]*100)))
+            // casesCount.push(+d.cases);
             casesCategory.push(+d[category]);
         }
         if (d[category] != null & d[category] > 0 & d.death > 0) {
             deathCountry.push(d.country_region);
-            deathCount.push(+d.death);
+            deathCount.push((normalizedCategory === "none" ? +d.death : (+d.death/+d[category]*100)))
+            // deathCount.push(+d.death);
             deathCategory.push(+d[category]);
         }
     });
@@ -33,20 +38,24 @@ function unpackData(data, category) {
 /**
  * Function to use Plotly to generate scatter plots
  * @param {*} data
- * @param {string} category - column name of dataset to compare to compare (population, med_age, gdp or health_exp)
+ * @param {string} category - column name of dataset to compare to compare
+ *                              (population, med_age, gdp or health_exp)
+ * @param {string} normCategory - column name of dataset to normalize cases/deaths
+ *                              (population, med_age, gdp or health_exp) or "none"
  * @param {string} xScale - plotting scale (lienar or log)
  * @param {string} yScale - plotting scale (lienar or log)
  * @param {string} tagID - ID of html element to plot
  * @param {string} txtXAxis - x-axis label
  * @param {string} txtYAxis - y-axis label
  */
-function generatePlot(data, category, xScale, yScale, tagID, txtXAxis, txtYAxis) {
+function generatePlot(data, category, normCategory, xScale, yScale, tagID, txtXAxis, txtYAxis) {
     // Unpack data
-    var dataUnpack = unpackData(data, category);
+    var dataUnpack = unpackData(data, category, normCategory);
 
     // Set up for Plotly
     const markerSize = 12;
     const markerBorderWidth = 1;
+
     let trace = [{
         name: "Confirmed Cases",
         x: dataUnpack.casesCategory,
@@ -140,15 +149,17 @@ function generatePlot(data, category, xScale, yScale, tagID, txtXAxis, txtYAxis)
 };
 
 function generateScatterPlots(data) {
-    // data, data column, x-axis scale, y-axis scale, ID of <figure> element, chart X-axis label, chart Y-axis label
+    // data, data column, normalized data column, x-axis scale, y-axis scale, ID of <figure> element, chart X-axis label, chart Y-axis label
     // 1. Population
-    generatePlot(data, "population", "log", "log", "popContainer", "Population", "Number of Cases");
+    generatePlot(data, "population", "none", "log", "log", "popContainer", "Population", "Number of Cases");
+    // 1b. Pct Population
+    generatePlot(data, "population", "population", "log", "linear", "pctpopContainer", "Population", "Cases per Population (%)");
     // 2. Median Age
-    generatePlot(data, "med_age", "linear", "log", "ageContainer", "Median Age", "Number of Cases");
+    generatePlot(data, "med_age", "none", "linear", "log", "ageContainer", "Median Age", "Number of Cases");
     // 3. GDP
-    generatePlot(data, "gdp", "log", "log", "gdpContainer", "per capita GDP ($)", "Number of Cases");
+    generatePlot(data, "gdp", "none", "log", "log", "gdpContainer", "per capita GDP ($)", "Number of Cases");
     // 4. Healthcare Expense
-    generatePlot(data, "health_exp", "linear", "log", "hcContainer", "Expense as % of GDP", "Number of Cases");
+    generatePlot(data, "health_exp", "none", "linear", "log", "hcContainer", "Expense as % of GDP", "Number of Cases");
 
 };
 
