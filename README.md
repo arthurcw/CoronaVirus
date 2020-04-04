@@ -45,3 +45,6 @@ All data are loaded to PostgresSQL. Data are organized into 5 tables.
 - covid19
 - health_exp_gdp
 - global_gdp
+
+Database stucture also illustrated with diagram below.
+![ImageDiagram] (https://github.com/Lei-Gu/CoronaVirus/blob/Cindy/DataBase_Structure.png)
