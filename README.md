@@ -20,11 +20,9 @@ Therefore, we are collecting datasets and visualizing them to see if we can pred
 
 ## Data Sources
 
-1.	Johns Hopkins full dataset
- 
-https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_daily_reports
+1.	Johns Hopkins full dataset (https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_daily_reports). Available as csv file.
 
-2.	
+2.	New York Times US dataset (https://github.com/nytimes/covid-19-data). Available as csv file.
 
 ## Libraries 
 - Bootstrap
