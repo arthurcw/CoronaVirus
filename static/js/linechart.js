@@ -62,7 +62,7 @@ d3.json(urlLineChart).then(function (data, err) {
             .nice();
 
         var yLinearScale_each = d3.scaleLinear()
-            .domain([0, 150000])
+            .domain([0, 180000])
             .range([height, 0])
             .nice();
 
