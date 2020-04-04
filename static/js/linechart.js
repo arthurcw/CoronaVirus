@@ -16,7 +16,7 @@ var width = svgWidth - margin.left - margin.right;
 var height = svgHeight - margin.top - margin.bottom;
 // Create an SVG wrapper, append an SVG group that will hold our chart, and shift the latter by left and top margins.
 // Append SVG element
-var svg = d3.select("#timeSeriesPlot")
+var svg = d3.select("#timeSeriesPlotAll")
     .append("svg")
     .attr("width", '100%')
     .attr("height", '100%')
