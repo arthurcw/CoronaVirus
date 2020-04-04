@@ -37,3 +37,11 @@ Therefore, we are collecting datasets and visualizing them to see if we can pred
 2.	Remove and rename columns
 3.	Drop NAs
 4.	Change data types to correct types 
+
+All data are loaded to PostgresSQL. Data are organized into 5 tables.
+
+- countries
+- global_population
+- covid19
+- health_exp_gdp
+- global_gdp
