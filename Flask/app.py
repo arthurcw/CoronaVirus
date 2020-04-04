@@ -71,15 +71,30 @@ def mergeMetaData():
     df = pd.read_sql(query, connection)
     return df.to_json(orient='records')
 
+#  query country data
+@app.route('/dataByCountry')
+def queryCountryDaily():
+    engine = create_engine(f"postgresql+psycopg2://{user}:{pw}@{db_loc}/{db_name}")
+    connection = engine.connect()
+    query = f'''
+        SELECT country_region, date, cases, death
+        FROM covid19 as c19
+        WHERE admin2 IS NULL AND province_state IS NULL
+    '''
+    df = pd.read_sql(query, connection)
+    return df.to_json(orient='records')
+
 # Query Countries with no Reported Cases
 @app.route('/countryNoCase')
 def queryZeroCase():
     engine = create_engine(f"postgresql+psycopg2://{user}:{pw}@{db_loc}/{db_name}")
     connection = engine.connect()
     query = f'''
-        SELECT code, iso_country, latitude, longitude
-        FROM countries
-        WHERE covid19_country IS NULL
+        SELECT c.code, c.iso_country, p.population_2020 as population, c.latitude, c.longitude
+        FROM countries as c
+        LEFT JOIN global_population as p
+            on p.country = c.pop_country
+        WHERE c.covid19_country IS NULL
         '''
     df = pd.read_sql(query, connection)
     return df.to_json(orient='records')
