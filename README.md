@@ -20,15 +20,31 @@ Therefore, we are collecting datasets and visualizing them to see if we can pred
 
 ## Data Sources
 
-1.	Johns Hopkins full dataset
- 
-https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_daily_reports
+1.	Johns Hopkins full dataset (https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_daily_reports). Available as csv file.
 
-2.	
+2.	New York Times US dataset (https://github.com/nytimes/covid-19-data). Available as csv file.
 
+## Libraries 
+- Bootstrap
+- Leaflet
+- D3
+- Highcharts
+- Plotly
+- Awesome Fonts
 
 ## Data manipulation and cleanup
 1.	Check for duplicates and missing data
 2.	Remove and rename columns
 3.	Drop NAs
 4.	Change data types to correct types 
+
+All data are loaded to PostgresSQL. Data are organized into 5 tables.
+
+- countries
+- global_population
+- covid19
+- health_exp_gdp
+- global_gdp
+
+Database stucture also illustrated with diagram below.
+![ImageDiagram](DataBase_Structure.png)
