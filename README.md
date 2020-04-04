@@ -1,7 +1,8 @@
 # Data Visualization Project
 
 ## Coronavirus Dashboard and Prediction
-Team: Arthur Chan, Lei Gu, Cindy Wagner and Jun Yang (April 2020)
+### Team: Arthur Chan, Lei Gu, Cindy Wagner and Jun Yang (April 2020)
+
 ![Front Page](./static/image/frontpage.PNG)
 
 ### Scope
