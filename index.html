@@ -42,12 +42,6 @@
     <link rel="stylesheet" type="text/css" href="static/css/style.css">
     <link rel="stylesheet" type="text/css" href="static/css/mapStyle.css">
 
-    <!-- Highcharts -->
-    <script src="https://code.highcharts.com/highcharts.js"></script>
-    <script src="https://code.highcharts.com/modules/exporting.js"></script>
-    <script src="https://code.highcharts.com/modules/export-data.js"></script>
-    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
-
   </head>
   <body>
     <div class="container-fluid">
@@ -164,14 +158,15 @@
             </figure>
             <h5>Trend</h5>
             <p>The following time series plots the number of confirmed cases</p>
-            <!-- Time Series Plot -->
+            <div id="timeSeriesPlot">
+              <!-- Time Series Plot -->
             </div>
-            <h6>US</h6>
+            <h6>United States</h6>
             <p>In the US, the virus starts spreading in Washington, California and New York......</p>
             <!-- Time Series Plot US-->
-            <div class="image-placeholder m-3" id="timeSeriesPlotUS">
-              <h4>Time Series Plot by states?</h4>  <!-- this is a placeholder-->
-            </div>
+            <figure class="highcharts-figure">
+              <div id="timeSeriesPlotUS"></div>
+            </figure>
           </div>
 
           <!-- Mortality Rates -->
@@ -204,7 +199,6 @@
             <figure>
               <div id="ageContainer"><!-- Cases vs Age Chart --></div>
             </figure>
-            <p>Some discussions</p>
           </div>
 
           <!-- Cases or death rates vs GDP -->
@@ -214,7 +208,6 @@
             <figure>
               <div id="gdpContainer"><!-- Cases vs GDP Chart --></div>
             </figure>
-            <p>Some discussions</p>
           </div>
 
           <!-- Cases or death rates vs Healthcare Expenditure -->
@@ -224,7 +217,6 @@
             <figure>
               <div id="hcContainer"><!-- Cases vs Healthcare Exp Chart --></div>
             </figure>
-            <p>Some discussions</p>
           </div>
 
           <!-- Forecast -->
@@ -235,7 +227,6 @@
             <div class="image-placeholder m-3" id="forecastPlot">
               <h4>curve fitting</h4>  <!-- this is a placeholder-->
             </div>
-            <p>Some discussions</p>
           </div>
 
           <div class="mt-5 mx-3" id="virusFree">

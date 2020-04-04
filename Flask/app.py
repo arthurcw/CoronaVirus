@@ -99,6 +99,19 @@ def queryZeroCase():
     df = pd.read_sql(query, connection)
     return df.to_json(orient='records')
 
+#  query states data
+@app.route('/dataByStates')
+def queryStatesDaily():
+    engine = create_engine(f"postgresql+psycopg2://{user}:{pw}@{db_loc}/{db_name}")
+    connection = engine.connect()
+    query = f'''
+        SELECT province_state, date, cases, death
+        FROM covid19
+        WHERE admin2 IS NULL AND province_state IS NOT NULL AND country_region = 'US'
+    '''
+    df = pd.read_sql(query, connection)
+    return df.to_json(orient='records')
+
 #################################################
 # Run the application
 #################################################

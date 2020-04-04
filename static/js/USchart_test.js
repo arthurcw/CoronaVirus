@@ -1,49 +1,48 @@
-const url9 = "./Datasets/Covid19_20200329.csv";
-d3.csv(url9, function (data) {
-    
-    var parseTime = d3.timeParse("%m/%d/%Y");
+// Data source
+const urlLineChartUS = "http://127.0.0.1:5000/dataByStates";
+
+d3.json(urlLineChartUS).then( function (data) {
 
     data.forEach((d) => {
-        d.date = parseTime(d.date);
+        d.date = +d.date;
         d.cases = +d.cases;
         d.death = +d.death;
     });
-    
+
     // slice the date for the top 8 states
     const data_US_NY = data.filter((d) => {
-        return d["country_region"] === "US" & d["admin2"] == "" & d["province_state"] === "New York";
+        return d["province_state"] === "New York";
     });
 
     const data_US_NJ = data.filter((d) => {
-        return d["country_region"] === "US" & d["admin2"] == "" & d["province_state"] === "New Jersey";
+        return d["province_state"] === "New Jersey";
     });
 
     const data_US_CA = data.filter((d) => {
-        return d["country_region"] === "US" & d["admin2"] == "" & d["province_state"] === "California";
+        return d["province_state"] === "California";
     });
 
     var data_US_MI = data.filter((d) => {
-        return d["country_region"] === "US" & d["admin2"] == "" & d["province_state"] === "Michigan";
+        return d["province_state"] === "Michigan";
     });
 
     var data_US_MA = data.filter((d) => {
-        return d["country_region"] === "US" & d["admin2"] == "" & d["province_state"] === "Massachusetts";
+        return d["province_state"] === "Massachusetts";
     });
 
     var data_US_FL = data.filter((d) => {
-        return d["country_region"] === "US" & d["admin2"] == "" & d["province_state"] === "Florida";
+        return d["province_state"] === "Florida";
     });
 
     var data_US_WA = data.filter((d) => {
-        return d["country_region"] === "US" & d["admin2"] == "" & d["province_state"] === "Washington";
+        return d["province_state"] === "Washington";
     });
 
     var data_US_IL = data.filter((d) => {
-        return d["country_region"] === "US" & d["admin2"] == "" & d["province_state"] === "Illinois";
+        return d["province_state"] === "Illinois";
     });
-      
+
     var time_list = data_US_NY.map(d => d.date);
-    console.log(time_list);
     var dateFormatter = d3.timeFormat("%d-%b");
     var time_list_new = time_list.map(d => dateFormatter(d)).slice(-15);
     var time_15 = time_list.slice(-15);
@@ -52,7 +51,6 @@ d3.csv(url9, function (data) {
     var case_number_NY = [];
     var cNY = [];
     for (i = 0; i < time_15.length; i++) {
-        console.log(time_15[i]);
         data_each_day = data_US_NY.filter((d) => {
             return d["date"] === time_15[i];
         });
@@ -60,7 +58,6 @@ d3.csv(url9, function (data) {
 
     }
     case_number_NY = cNY.map(d => d.cases);
-    console.log(case_number_NY);
 
     // Slice dataset for NJ
     var time_list_NJ = data_US_NJ.map(d => d.date);
@@ -213,30 +210,16 @@ d3.csv(url9, function (data) {
         }, {
             name: 'Massachusett',
             data: case_number_MA
-        }, { 
+        }, {
             name: 'Florida',
             data: case_number_FL
-        }, {     
+        }, {
             name: 'Washington',
             data: case_number_WA
-        }, {  
+        }, {
             name: 'Illinois',
             data: case_number_IL
         },]
     });
 
 });
-
-
-// remove duplicate
-// var time_list = data_US_1.map(d => d.date);
-//     function unique(arr) {
-//         var u = {}, a = [];
-//         for(var i = 0, l = arr.length; i < l; ++i){
-//             if(!u.hasOwnProperty(arr[i])) {
-//                 a.push(arr[i]);
-//                 u[arr[i]] = 1;
-//             }
-//         }
-//         return a;
-//     }

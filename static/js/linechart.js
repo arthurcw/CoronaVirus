@@ -5,7 +5,6 @@ const urlLineChart = "http://127.0.0.1:5000/dataByCountry";
 // SVG setting
 var svgWidth = d3.select("main").node().getBoundingClientRect().width;
 var svgHeight = 500;
-console.log(svgWidth, svgHeight);
 var margin = {
     top: 20,
     right: 40,
@@ -16,7 +15,7 @@ var width = svgWidth - margin.left - margin.right;
 var height = svgHeight - margin.top - margin.bottom;
 // Create an SVG wrapper, append an SVG group that will hold our chart, and shift the latter by left and top margins.
 // Append SVG element
-var svg = d3.select("#timeSeriesPlotAll")
+var svg = d3.select("#timeSeriesPlot")
     .append("svg")
     .attr("width", '100%')
     .attr("height", '100%')
