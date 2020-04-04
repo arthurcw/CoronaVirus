@@ -2,6 +2,7 @@
 
 ## Coronavirus Prediction
 Team: Arthur Chan, Lei Gu, Cindy Wagner and Jun Yang (April 2020)
+![Front Page](./static/image/frontpage.PNG)
 
 ### Scope
 https://docs.google.com/document/d/1daK9q_31orQdcuOCwKs5_o7HbG0SOPchfXNsuwr-h1E/edit
