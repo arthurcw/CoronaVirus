@@ -47,4 +47,4 @@ All data are loaded to PostgresSQL. Data are organized into 5 tables.
 - global_gdp
 
 Database stucture also illustrated with diagram below.
-![ImageDiagram] (https://github.com/Lei-Gu/CoronaVirus/blob/Cindy/DataBase_Structure.png)
+![ImageDiagram](DataBase_Structure.png)
