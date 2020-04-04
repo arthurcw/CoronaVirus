@@ -53,7 +53,7 @@ function generatePlot(data, category, normCategory, xScale, yScale, tagID, txtXA
     var dataUnpack = unpackData(data, category, normCategory);
 
     // Set up for Plotly
-    const markerSize = 12;
+    const markerSize = 10;
     const markerBorderWidth = 1;
 
     let trace = [{
