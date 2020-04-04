@@ -221,16 +221,30 @@
 
           <!-- Forecast -->
           <div class="mt-5 mx-3" id="forecast">
-            <h3>Forecast</h3>
-            <p>Compare with Healthcare as % of GDP</p>
+            <h3>Forecast (Logistic Growth Model)</h3>
+            <p>This is a simple mathematical analysis of projecting future coronavirus cases by
+              fitting daily reported data using logistic curve (S-curve). Curve fitting was done
+              multiple times in the last 10 days. Projection started with <strong>115,000
+              </strong> using data from 10 days ago, and has climbed to over <strong>438,000</strong>
+               with 4/2/2020 data.
+            </p>
+            <p>Another set of projection was done on making assumptions on the short-term growth rate. 
+              If growth rate stays constant for the next 5 days. Number of cases is projected to
+              exceed <strong>1.2 milliom</strong> in a month.
+            </p>
             <!-- Death Rates Time Series Plot -->
-            <div class="image-placeholder m-3" id="forecastPlot">
-              <h4>curve fitting</h4>  <!-- this is a placeholder-->
+            <div class="row m-1">
+              <div class="col-xl-6">
+                <img src="static/image/logfitUS.svg" class="img-fluid">
+              </div>
+              <div class="col-xl-6">
+                <img src="static/image/projectionUS.svg" class="img-fluid">
+              </div>
             </div>
           </div>
 
           <div class="mt-5 mx-3" id="virusFree">
-            <h3>Let's end this page with countries with 0 reported cases</h3>
+            <h3>Let's end this page with a map countries with 0 reported cases</h3>
           </div>
           <div class="image-placeholder m-3" id="mapNoCase"><!-- Map of Countries with no cases--></div>
         </main>
