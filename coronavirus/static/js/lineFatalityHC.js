@@ -1,7 +1,7 @@
 // Using Highcharts to plot fatality rate over time
 
 // Source of data
-const urlByCountry = "http://127.0.0.1:5000/dataByCountry";
+const urlByCountry = '/api/Covid19ByCountry';
 const figFatalityID = "deathRatePlot"
 
 // Countries to plot
@@ -12,6 +12,14 @@ const countryFatalityList =[
 
 // Function to gerenate time serie plot
 function generateFatalityTS(data) {
+
+    // parse data
+    data.forEach((d) => {
+        d.date = Date.parse(d.date);
+        d.cases = +d.cases;
+        d.death = +d.death;
+    });
+
     // Build data series
     function buildSeries() {
         var seriesAll = [];
@@ -27,7 +35,7 @@ function generateFatalityTS(data) {
             var dataPoints = [];
             dataCountry.forEach(d=> {
                 // x, y coordinates (date, death rate)
-                dataPoints.push([+d.date, +d.death/+d.cases * 100])
+                dataPoints.push([d.date, d.death/d.cases * 100])
             });
             dataSeries["data"] = dataPoints;
             seriesAll.push(dataSeries);
@@ -68,8 +76,5 @@ function generateFatalityTS(data) {
 };
 
 d3.json(urlByCountry).then( data => {
-    generateFatalityTS(data);
-    // console.log(data);
+    generateFatalityTS(data.countries);
 })
-
-//.catch(function(error) { console.log(error); });

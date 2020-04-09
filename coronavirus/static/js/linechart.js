@@ -1,6 +1,6 @@
 // Use D3 to plot cases over time
 // Data source
-const urlLineChart = "http://127.0.0.1:5000/dataByCountry";
+const urlLineChart = "/api/Covid19ByCountry";
 
 // SVG setting
 var svgWidth = d3.select("main").node().getBoundingClientRect().width;
@@ -31,8 +31,9 @@ d3.json(urlLineChart).then(function (data, err) {
 
     // Step 1: Parse Data/Cast as numbers
     // ==============================
+    data = data.countries;
     data.forEach((d) => {
-        d.date = +d.date;
+        d.date = Date.parse(d.date);
         d.cases = +d.cases;
         d.death = +d.death;
     });

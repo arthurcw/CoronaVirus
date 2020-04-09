@@ -1,6 +1,4 @@
-// Source of data
-const urlFree = "http://127.0.0.1:5000/countryNoCase";
-
+// Generate map where countries have no reported cases
 
 function createMapNoCase(data) {
     // Map initialization parameters
@@ -55,6 +53,6 @@ function createMapNoCase(data) {
 };
 
 // Run
-d3.json(urlFree).then(data=> {
-    createMapNoCase(data);
+d3.json('/api/NoCasesCountry').then(data=> {
+    createMapNoCase(data.countries);
 });

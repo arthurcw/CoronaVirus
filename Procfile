@@ -1,1 +1,1 @@
-web: gunicorn Flask.app:app
+web: gunicorn coronavirus.app:app

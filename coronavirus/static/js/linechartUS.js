@@ -1,10 +1,12 @@
 // Data source
-const urlLineChartUS = "http://127.0.0.1:5000/dataByStates";
+const urlLineChartUS = "/api/Covid19ByUSStates";
 
 d3.json(urlLineChartUS).then( function (data) {
 
+    // parse data
+    data = data.states;
     data.forEach((d) => {
-        d.date = +d.date;
+        d.date = Date.parse(d.date);
         d.cases = +d.cases;
         d.death = +d.death;
     });
