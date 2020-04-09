@@ -602,7 +602,7 @@
 ,,Sweden,,63,16,4/2/2020,5568,308,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,4/3/2020
 ,,Switzerland,,46.8182,8.2275,4/2/2020,18827,536,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,4/3/2020
 ,,Syria,,34.802075,38.996815,4/2/2020,16,2,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,4/3/2020
-,,Taiwan*,,23.7,121,4/2/2020,339,5,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,4/3/2020
+,,Taiwan,,23.7,121,4/2/2020,339,5,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,4/3/2020
 ,,Tanzania,,-6.369,34.8888,4/2/2020,20,1,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,4/3/2020
 ,,Thailand,,15,101,4/2/2020,1875,15,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,4/3/2020
 ,,Timor-Leste,,-8.874217,125.727539,4/2/2020,1,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,4/3/2020
@@ -3431,3 +3431,243 @@ Washakie,Wyoming,US,56043,43.90451606,-107.680187,4/2/2020,2,0,https://github.co
 ,,West Bank and Gaza,,31.9522,35.2332,4/2/2020,161,1,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,4/3/2020
 ,,Zambia,,-15.4167,28.2833,4/2/2020,39,1,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,4/3/2020
 ,,Zimbabwe,,-20,30,4/2/2020,9,1,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,4/3/2020
+,,Brazil,,-14.235,-51.9253,2/26/2020,1,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Brazil,,-14.235,-51.9253,2/27/2020,1,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Brazil,,-14.235,-51.9253,2/28/2020,1,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Brazil,,-14.235,-51.9253,2/29/2020,2,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Brazil,,-14.235,-51.9253,3/1/2020,2,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Brazil,,-14.235,-51.9253,3/2/2020,2,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Brazil,,-14.235,-51.9253,3/3/2020,2,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Brazil,,-14.235,-51.9253,3/4/2020,4,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Brazil,,-14.235,-51.9253,3/5/2020,4,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Brazil,,-14.235,-51.9253,3/6/2020,13,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Brazil,,-14.235,-51.9253,3/7/2020,13,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Brazil,,-14.235,-51.9253,3/8/2020,20,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Brazil,,-14.235,-51.9253,3/9/2020,25,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Brazil,,-14.235,-51.9253,3/10/2020,31,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Brazil,,-14.235,-51.9253,3/11/2020,38,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Brazil,,-14.235,-51.9253,3/12/2020,52,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Brazil,,-14.235,-51.9253,3/13/2020,151,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Brazil,,-14.235,-51.9253,3/14/2020,151,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Brazil,,-14.235,-51.9253,3/15/2020,162,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Brazil,,-14.235,-51.9253,3/16/2020,200,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Brazil,,-14.235,-51.9253,3/17/2020,321,1,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Brazil,,-14.235,-51.9253,3/18/2020,372,3,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Brazil,,-14.235,-51.9253,3/19/2020,621,6,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Brazil,,-14.235,-51.9253,3/20/2020,793,11,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Brazil,,-14.235,-51.9253,3/21/2020,1021,15,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Brazil,,-14.235,-51.9253,3/22/2020,1546,25,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Brazil,,-14.235,-51.9253,3/23/2020,1924,34,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Brazil,,-14.235,-51.9253,3/24/2020,2247,46,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Brazil,,-14.235,-51.9253,3/25/2020,2554,59,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Brazil,,-14.235,-51.9253,3/26/2020,2985,77,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Brazil,,-14.235,-51.9253,3/27/2020,3417,92,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Brazil,,-14.235,-51.9253,3/28/2020,3904,111,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/31/2020
+,,Brazil,,-14.235,-51.9253,3/29/2020,4256,136,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/31/2020
+,,Brazil,,-14.235,-51.9253,3/30/2020,4579,159,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,4/3/2020
+,,Brazil,,-14.235,-51.9253,3/31/2020,5717,201,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,4/3/2020
+,,Brazil,,-14.235,-51.9253,4/1/2020,6836,240,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,4/3/2020
+,,"Korea, South",,36,128,1/22/2020,1,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,"Korea, South",,36,128,1/23/2020,1,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,"Korea, South",,36,128,1/24/2020,2,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,"Korea, South",,36,128,1/25/2020,2,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,"Korea, South",,36,128,1/26/2020,3,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,"Korea, South",,36,128,1/27/2020,4,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,"Korea, South",,36,128,1/28/2020,4,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,"Korea, South",,36,128,1/29/2020,4,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,"Korea, South",,36,128,1/30/2020,4,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,"Korea, South",,36,128,1/31/2020,11,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,"Korea, South",,36,128,2/1/2020,12,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,"Korea, South",,36,128,2/2/2020,15,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,"Korea, South",,36,128,2/3/2020,15,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,"Korea, South",,36,128,2/4/2020,16,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,"Korea, South",,36,128,2/5/2020,19,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,"Korea, South",,36,128,2/6/2020,23,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,"Korea, South",,36,128,2/7/2020,24,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,"Korea, South",,36,128,2/8/2020,24,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,"Korea, South",,36,128,2/9/2020,25,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,"Korea, South",,36,128,2/10/2020,27,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,"Korea, South",,36,128,2/11/2020,28,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,"Korea, South",,36,128,2/12/2020,28,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,"Korea, South",,36,128,2/13/2020,28,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,"Korea, South",,36,128,2/14/2020,28,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,"Korea, South",,36,128,2/15/2020,28,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,"Korea, South",,36,128,2/16/2020,29,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,"Korea, South",,36,128,2/17/2020,30,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,"Korea, South",,36,128,2/18/2020,31,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,"Korea, South",,36,128,2/19/2020,31,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,"Korea, South",,36,128,2/20/2020,104,1,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,"Korea, South",,36,128,2/21/2020,204,2,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,"Korea, South",,36,128,2/22/2020,433,2,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,"Korea, South",,36,128,2/23/2020,602,6,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,"Korea, South",,36,128,2/24/2020,833,8,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,"Korea, South",,36,128,2/25/2020,977,10,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,"Korea, South",,36,128,2/26/2020,1261,12,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,"Korea, South",,36,128,2/27/2020,1766,13,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,"Korea, South",,36,128,2/28/2020,2337,13,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,"Korea, South",,36,128,2/29/2020,3150,16,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,"Korea, South",,36,128,3/1/2020,3736,17,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,"Korea, South",,36,128,3/2/2020,4335,28,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,"Korea, South",,36,128,3/3/2020,5186,28,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,"Korea, South",,36,128,3/4/2020,5621,35,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,"Korea, South",,36,128,3/5/2020,6088,35,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,"Korea, South",,36,128,3/6/2020,6593,42,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,"Korea, South",,36,128,3/7/2020,7041,44,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,"Korea, South",,36,128,3/8/2020,7314,50,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,"Korea, South",,36,128,3/9/2020,7478,53,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,"Korea, South",,36,128,3/10/2020,7513,54,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,"Korea, South",,36,128,3/11/2020,7755,60,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,"Korea, South",,36,128,3/12/2020,7869,66,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,"Korea, South",,36,128,3/13/2020,7979,66,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,"Korea, South",,36,128,3/14/2020,8086,72,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,"Korea, South",,36,128,3/15/2020,8162,75,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,"Korea, South",,36,128,3/16/2020,8236,75,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,"Korea, South",,36,128,3/17/2020,8320,81,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,"Korea, South",,36,128,3/18/2020,8413,84,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,"Korea, South",,36,128,3/19/2020,8565,91,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,"Korea, South",,36,128,3/20/2020,8652,94,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,"Korea, South",,36,128,3/21/2020,8799,102,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,"Korea, South",,36,128,3/22/2020,8961,111,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,"Korea, South",,36,128,3/23/2020,8961,111,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,"Korea, South",,36,128,3/24/2020,9037,120,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,"Korea, South",,36,128,3/25/2020,9137,126,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,"Korea, South",,36,128,3/26/2020,9241,131,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,"Korea, South",,36,128,3/27/2020,9332,139,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,"Korea, South",,36,128,3/28/2020,9478,144,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/31/2020
+,,"Korea, South",,36,128,3/29/2020,9583,152,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/31/2020
+,,"Korea, South",,36,128,3/30/2020,9661,158,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,4/3/2020
+,,"Korea, South",,36,128,3/31/2020,9786,162,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,4/3/2020
+,,"Korea, South",,36,128,4/1/2020,9887,165,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,4/3/2020
+,,United Kingdom,,55.3781,-3.436,1/31/2020,2,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,United Kingdom,,55.3781,-3.436,2/1/2020,2,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,United Kingdom,,55.3781,-3.436,2/2/2020,2,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,United Kingdom,,55.3781,-3.436,2/3/2020,2,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,United Kingdom,,55.3781,-3.436,2/4/2020,2,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,United Kingdom,,55.3781,-3.436,2/5/2020,2,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,United Kingdom,,55.3781,-3.436,2/6/2020,2,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,United Kingdom,,55.3781,-3.436,2/7/2020,3,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,United Kingdom,,55.3781,-3.436,2/8/2020,3,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,United Kingdom,,55.3781,-3.436,2/9/2020,3,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,United Kingdom,,55.3781,-3.436,2/10/2020,8,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,United Kingdom,,55.3781,-3.436,2/11/2020,8,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,United Kingdom,,55.3781,-3.436,2/12/2020,9,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,United Kingdom,,55.3781,-3.436,2/13/2020,9,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,United Kingdom,,55.3781,-3.436,2/14/2020,9,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,United Kingdom,,55.3781,-3.436,2/15/2020,9,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,United Kingdom,,55.3781,-3.436,2/16/2020,9,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,United Kingdom,,55.3781,-3.436,2/17/2020,9,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,United Kingdom,,55.3781,-3.436,2/18/2020,9,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,United Kingdom,,55.3781,-3.436,2/19/2020,9,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,United Kingdom,,55.3781,-3.436,2/20/2020,9,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,United Kingdom,,55.3781,-3.436,2/21/2020,9,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,United Kingdom,,55.3781,-3.436,2/22/2020,9,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,United Kingdom,,55.3781,-3.436,2/23/2020,9,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,United Kingdom,,55.3781,-3.436,2/24/2020,13,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,United Kingdom,,55.3781,-3.436,2/25/2020,13,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,United Kingdom,,55.3781,-3.436,2/26/2020,13,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,United Kingdom,,55.3781,-3.436,2/27/2020,15,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,United Kingdom,,55.3781,-3.436,2/28/2020,20,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,United Kingdom,,55.3781,-3.436,2/29/2020,23,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,United Kingdom,,55.3781,-3.436,3/1/2020,36,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,United Kingdom,,55.3781,-3.436,3/2/2020,40,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,United Kingdom,,55.3781,-3.436,3/3/2020,51,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,United Kingdom,,55.3781,-3.436,3/4/2020,85,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,United Kingdom,,55.3781,-3.436,3/5/2020,115,1,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,United Kingdom,,55.3781,-3.436,3/6/2020,163,2,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,United Kingdom,,55.3781,-3.436,3/7/2020,206,2,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,United Kingdom,,55.3781,-3.436,3/8/2020,273,3,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,United Kingdom,,55.3781,-3.436,3/9/2020,321,4,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,United Kingdom,,55.3781,-3.436,3/10/2020,382,6,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,United Kingdom,,55.3781,-3.436,3/11/2020,456,8,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,United Kingdom,,55.3781,-3.436,3/12/2020,456,8,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,United Kingdom,,55.3781,-3.436,3/13/2020,798,8,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,United Kingdom,,55.3781,-3.436,3/14/2020,1140,21,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,United Kingdom,,55.3781,-3.436,3/15/2020,1140,21,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,United Kingdom,,55.3781,-3.436,3/16/2020,1543,55,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,United Kingdom,,55.3781,-3.436,3/17/2020,1950,55,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,United Kingdom,,55.3781,-3.436,3/18/2020,2626,71,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,United Kingdom,,55.3781,-3.436,3/19/2020,2689,137,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,United Kingdom,,55.3781,-3.436,3/20/2020,3983,177,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,United Kingdom,,55.3781,-3.436,3/21/2020,5018,233,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,United Kingdom,,55.3781,-3.436,3/22/2020,5683,281,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,United Kingdom,,55.3781,-3.436,3/23/2020,6650,335,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,United Kingdom,,55.3781,-3.436,3/24/2020,8077,422,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,United Kingdom,,55.3781,-3.436,3/25/2020,9529,465,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,United Kingdom,,55.3781,-3.436,3/26/2020,11658,578,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,United Kingdom,,55.3781,-3.436,3/27/2020,14543,759,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,United Kingdom,,55.3781,-3.436,3/28/2020,17089,1019,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/31/2020
+,,United Kingdom,,55.3781,-3.436,3/29/2020,19522,1228,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/31/2020
+,,United Kingdom,,55.3781,-3.436,3/30/2020,22141,1408,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,4/3/2020
+,,United Kingdom,,55.3781,-3.436,3/31/2020,25150,1789,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,4/3/2020
+,,United Kingdom,,55.3781,-3.436,4/1/2020,29474,2352,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,4/3/2020
+,,Taiwan,,23.7,121,1/22/2020,1,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Taiwan,,23.7,121,1/23/2020,1,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Taiwan,,23.7,121,1/24/2020,3,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Taiwan,,23.7,121,1/25/2020,3,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Taiwan,,23.7,121,1/26/2020,4,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Taiwan,,23.7,121,1/27/2020,5,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Taiwan,,23.7,121,1/28/2020,8,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Taiwan,,23.7,121,1/29/2020,8,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Taiwan,,23.7,121,1/30/2020,9,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Taiwan,,23.7,121,1/31/2020,10,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Taiwan,,23.7,121,2/1/2020,10,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Taiwan,,23.7,121,2/2/2020,10,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Taiwan,,23.7,121,2/3/2020,10,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Taiwan,,23.7,121,2/4/2020,11,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Taiwan,,23.7,121,2/5/2020,11,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Taiwan,,23.7,121,2/6/2020,16,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Taiwan,,23.7,121,2/7/2020,16,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Taiwan,,23.7,121,2/8/2020,17,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Taiwan,,23.7,121,2/9/2020,18,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Taiwan,,23.7,121,2/10/2020,18,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Taiwan,,23.7,121,2/11/2020,18,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Taiwan,,23.7,121,2/12/2020,18,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Taiwan,,23.7,121,2/13/2020,18,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Taiwan,,23.7,121,2/14/2020,18,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Taiwan,,23.7,121,2/15/2020,18,0,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Taiwan,,23.7,121,2/16/2020,20,1,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Taiwan,,23.7,121,2/17/2020,22,1,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Taiwan,,23.7,121,2/18/2020,22,1,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Taiwan,,23.7,121,2/19/2020,23,1,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Taiwan,,23.7,121,2/20/2020,24,1,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Taiwan,,23.7,121,2/21/2020,26,1,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Taiwan,,23.7,121,2/22/2020,26,1,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Taiwan,,23.7,121,2/23/2020,28,1,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Taiwan,,23.7,121,2/24/2020,30,1,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Taiwan,,23.7,121,2/25/2020,31,1,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Taiwan,,23.7,121,2/26/2020,32,1,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Taiwan,,23.7,121,2/27/2020,32,1,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Taiwan,,23.7,121,2/28/2020,34,1,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Taiwan,,23.7,121,2/29/2020,39,1,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Taiwan,,23.7,121,3/1/2020,40,1,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Taiwan,,23.7,121,3/2/2020,41,1,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Taiwan,,23.7,121,3/3/2020,42,1,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Taiwan,,23.7,121,3/4/2020,42,1,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Taiwan,,23.7,121,3/5/2020,44,1,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Taiwan,,23.7,121,3/6/2020,45,1,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Taiwan,,23.7,121,3/7/2020,45,1,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Taiwan,,23.7,121,3/8/2020,45,1,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Taiwan,,23.7,121,3/9/2020,45,1,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Taiwan,,23.7,121,3/10/2020,47,1,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Taiwan,,23.7,121,3/11/2020,48,1,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Taiwan,,23.7,121,3/12/2020,49,1,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Taiwan,,23.7,121,3/13/2020,50,1,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Taiwan,,23.7,121,3/14/2020,53,1,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Taiwan,,23.7,121,3/15/2020,59,1,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Taiwan,,23.7,121,3/16/2020,67,1,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Taiwan,,23.7,121,3/17/2020,77,1,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Taiwan,,23.7,121,3/18/2020,100,1,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Taiwan,,23.7,121,3/19/2020,108,1,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Taiwan,,23.7,121,3/20/2020,135,2,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Taiwan,,23.7,121,3/21/2020,153,2,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Taiwan,,23.7,121,3/22/2020,169,2,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Taiwan,,23.7,121,3/23/2020,195,2,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Taiwan,,23.7,121,3/24/2020,215,2,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Taiwan,,23.7,121,3/25/2020,235,2,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Taiwan,,23.7,121,3/26/2020,252,2,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Taiwan,,23.7,121,3/27/2020,267,2,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/28/2020
+,,Taiwan,,23.7,121,3/28/2020,283,2,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/31/2020
+,,Taiwan,,23.7,121,3/29/2020,298,2,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,3/31/2020
+,,Taiwan,,23.7,121,3/30/2020,306,5,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,4/3/2020
+,,Taiwan,,23.7,121,3/31/2020,322,5,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,4/3/2020
+,,Taiwan,,23.7,121,4/1/2020,329,5,https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases,4/3/2020
