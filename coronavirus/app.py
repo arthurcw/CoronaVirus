@@ -1,16 +1,7 @@
-# import psycopg2
-# import sys
 import os
 from flask import Flask, jsonify, render_template
 from flask_sqlalchemy import SQLAlchemy
-# from sqlalchemy import sqlalchemy
 import pandas as pd
-
-# postgres login credentials and DB location
-# from sql_config import pw
-# from sql_config import user
-# db_loc = 'localhost:5432'
-# db_name = 'p2_coronavirus'
 
 #################################################
 # Flask Setup
@@ -22,13 +13,12 @@ app = Flask(__name__)
 # Database Setup
 #################################################
 
-# app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://localhost/p2_coronavirus'
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', '') or \
-    'postgresql://postgres:xxxxxx@localhost:5432/p2_coronavirus'
+# app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:xxxxxx@localhost:5432/p2_coronavirus'
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', '')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
-import models
+from . import models
 
 #################################################
 # Flask Routes
