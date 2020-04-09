@@ -1,5 +1,4 @@
-// API link
-const urlScatterPlots = "http://127.0.0.1:5000/dataLatestInfo";
+// Plotly is used to do scatter plots
 
 /**
  * Function to unpack data into arrays
@@ -164,6 +163,6 @@ function generateScatterPlots(data) {
 };
 
 // Read data and run
-d3.json(urlScatterPlots).then(data => {
-    generateScatterPlots(data);
+d3.json('/api/ScatterPlotLatest').then(data => {
+    generateScatterPlots(data.countries);
 })

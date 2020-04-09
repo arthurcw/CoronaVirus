@@ -40,12 +40,11 @@ def home():
     return render_template("index.html")
 
 # Query all coronavirus data
-# @app.route('/dataCovid19')
+# @app.route('/api/Covid19')
 # def sendDataCovid19():
-#     engine = create_engine(f"postgresql+psycopg2://{user}:{pw}@{db_loc}/{db_name}")
-#     connection = engine.connect()
-#     df_covid19 = pd.read_sql("SELECT * FROM covid19", connection)
-#     return df_covid19.to_json(orient='records')
+#     query = "SELECT * FROM covid19"
+#     results = db.session.execute(query)
+#     return {'covid19': [dict(zip(tuple(results.keys()), i)) for i in results.cursor]}
 
 # Query latest coronavirus count, exclude zero data or data without coordinates
 @app.route('/api/Covid19Latest')
@@ -61,47 +60,43 @@ def sendLatestCovid19():
     return {'latest': [dict(zip(tuple(results.keys()), i)) for i in results.cursor]}
 
 # Query Latest Covid-19 data along with country info for scatter plot
-# @app.route('/dataLatestInfo')
-# def mergeMetaData():
-#     engine = create_engine(f"postgresql+psycopg2://{user}:{pw}@{db_loc}/{db_name}")
-#     connection = engine.connect()
-#     query = f'''
-#         SELECT c.code,
-#             c19.country_region, c19.date, c19.cases, c19.death,
-#             p.population_2020 as population, p.med_age,
-#             g.gdp_2019_billions_usd*1e9/p.population_2020 as gdp,
-#             h.exp_pct_gdp_2016 as health_exp
-#         FROM covid19 as c19
-#         LEFT JOIN countries as c
-#             ON c19.country_region = c.covid19_country
-#         LEFT JOIN global_population as p
-#             on p.country = c.pop_country
-#         LEFT JOIN global_gdp as g
-#             on g.country = c.gdp_country
-#         LEFT JOIN health_exp_gdp as h
-#             on h.country = c.hexp_country
-#         WHERE c19.date = (SELECT MAX(date) FROM covid19)
-#         AND ((c19.cases + c19.death) > 0)
-#         AND c19.admin2 IS NULL
-#         AND c19.province_state IS NULL
-#         '''
-#     df = pd.read_sql(query, connection)
-#     return df.to_json(orient='records')
+@app.route('/api/ScatterPlotLatest')
+def mergeMetaData():
+    query = f'''
+        SELECT c.code,
+            c19.country_region, c19.date, c19.cases, c19.death,
+            p.population_2020 as population, p.med_age,
+            g.gdp_2019_billions_usd*1e9/p.population_2020 as gdp,
+            h.exp_pct_gdp_2016 as health_exp
+        FROM covid19 as c19
+        LEFT JOIN countries as c
+            ON c19.country_region = c.covid19_country
+        LEFT JOIN global_population as p
+            on p.country = c.pop_country
+        LEFT JOIN global_gdp as g
+            on g.country = c.gdp_country
+        LEFT JOIN health_exp_gdp as h
+            on h.country = c.hexp_country
+        WHERE c19.date = (SELECT MAX(date) FROM covid19)
+        AND ((c19.cases + c19.death) > 0)
+        AND c19.admin2 IS NULL
+        AND c19.province_state IS NULL
+        '''
+    results = db.session.execute(query)
+    return {'countries': [dict(zip(tuple(results.keys()), i)) for i in results.cursor]}
 
-# #  query country data
-# @app.route('/dataByCountry')
-# def queryCountryDaily():
-#     engine = create_engine(f"postgresql+psycopg2://{user}:{pw}@{db_loc}/{db_name}")
-#     connection = engine.connect()
-#     query = f'''
-#         SELECT country_region, date, cases, death
-#         FROM covid19 as c19
-#         WHERE admin2 IS NULL AND province_state IS NULL
-#     '''
-#     df = pd.read_sql(query, connection)
-#     return df.to_json(orient='records')
+#  query country data
+@app.route('/api/Covid19ByCountry')
+def queryCountryDaily():
+    query = f'''
+        SELECT country_region, date, cases, death
+        FROM covid19 as c19
+        WHERE admin2 IS NULL AND province_state IS NULL
+    '''
+    results = db.session.execute(query)
+    return {'countries': [dict(zip(tuple(results.keys()), i)) for i in results.cursor]}
 
-# # Query Countries with no Reported Cases
+# Query Countries with no Reported Cases
 @app.route('/api/NoCasesCountry')
 def queryZeroCase():
     query = f'''
