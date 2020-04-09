@@ -24,7 +24,7 @@ app = Flask(__name__)
 
 # app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://localhost/p2_coronavirus'
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', '') or \
-    'postgresql://postgres:192837@localhost:5432/p2_coronavirus'
+    'postgresql://postgres:xxxxxx@localhost:5432/p2_coronavirus'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
