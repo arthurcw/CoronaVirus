@@ -1,7 +1,8 @@
-// Source of data
-const urlMap = "http://127.0.0.1:5000/dataCovid19Latest";
+// Covid-19 data column names
 const caseFieldName = "cases";     // field name of confirmed cases
 const deathFieldName = "death";    // field name of deaths
+
+// Countries with sub-country level data
 const countriesDetail = ["US", "Australia", "Canada", "China"];
 
 // Map initialization parameters
@@ -14,7 +15,7 @@ var casesNumFormat = d3.format(",.0f");
 // Function to parse data
 function parseData(data) {
     data.forEach(d => {
-        d.date = +d.date;   // data came in from PostgreSQL as unix time stamp in milliseconds
+        d.date = Date.parse(d.date);   // data came in from PostgreSQL as unix time stamp in milliseconds
         d.cases = +d.cases;
         d.death = +d.death;
         d.latitude = +d.latitude;
@@ -294,6 +295,6 @@ function createMap(data) {
 };
 
 // Run
-d3.json(urlMap).then(data => {
-    createMap(data);
+d3.json('/api/Covid19Latest').then(data => {
+    createMap(data.latest);
 });
