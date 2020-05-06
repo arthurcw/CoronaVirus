@@ -3,7 +3,7 @@
 ## Coronavirus Dashboard and Prediction
 ### Team: Arthur Chan, Lei Gu, Cindy Wagner and Jun Yang (April 2020)
 
-### Website: Deployed to Heroku
+### PostgreSQL and website hosted on Heroku
 https://coronavirus-northwestern.herokuapp.com/
 
 ### Screenshot
